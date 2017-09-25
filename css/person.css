@@ -1,0 +1,336 @@
+/*导航部分*/
+.top{
+    height: 36px;
+    width: 100%;
+    background-color: #F7F7F7;
+    border: 1px solid #c0c0c0;
+}
+.topNav{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.topNavLeft{
+    height: 100%;
+    width: 350px;
+    float: left;
+}
+.topNavLeft li,.topNavRight li{
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+}
+.topNavLeft li ol,.topNavRight li ol{
+    clear: both;
+    position: absolute;
+    top: 36px;
+    left: -1px;
+    width: 98px;
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
+    border-top: none;
+    display: none;
+}
+.topNavRight li ol{
+    display: block;
+    width: 82px;
+    text-align: center;
+    display: none;
+}
+.topNavLeft li ol li,.topNavRight li ol li{
+    clear: both;
+    height: 24px;
+    line-height: 24px;
+    width: 96px;
+    text-align: center;
+}
+.topNavRight li ol li{
+    width: 82px;
+    text-align: center;
+}
+
+.topNavLeft li a{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    padding:0px 16px;
+    border-left: 1px solid #c0c0c0;
+}
+
+.topNavLeft li span{
+    transition: all 1s;
+}
+
+.navActive{
+    background:#fff;
+    border:1px solid #c0c0c0;
+    border-bottom:none;
+    border-top:none;
+}
+
+.topNavLeft li a b{
+    font-weight: 100;
+}
+.topNavLeft li a b:hover{
+    text-decoration: underline;
+}
+.topNavLeft li a b:nth-child(1){
+    color: red;
+}
+.topNavLeft li:nth-child(1) a{
+    padding-left: 0px;
+    border-left:none;
+}
+.topNavLeft li a span{
+    width: 11px;
+    height: 7px;
+    display: inline-block;
+    background: url("../img/img1/icon1.png") no-repeat -18px -47px;
+    margin-left: 5px;
+}
+.hoverSpan{
+    transform: rotate(360deg);
+    /* background-position: 0px -129px;*/
+}
+.topNavRight{
+    width: 404px;
+    height: 100%;
+    float: right;
+}
+.topNavRight li{
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    text-decoration: none;
+    color: black;
+  /*  position: relative;*/
+}
+.topNavRight li a{
+    font-size: 12px;
+    padding:0px 16px;
+    color: black;
+    border-left: 1px solid #c0c0c0;
+
+}
+.topNavRight li:nth-child(1) a{
+    border-left:none;
+}
+.topNavRight li #iphonestyle{
+    clear: both;
+    width: 223px;
+    height: 778px;
+    cursor: pointer;
+    position: absolute;
+    left: 1px;
+    top: 36px;
+    display: none;
+}
+.addstyle{
+    clear: both;
+    width: 223px;
+    height: 778px;
+    cursor: pointer;
+    position: absolute;
+    left: 1px;
+    top: 100px;
+    display: none;
+}
+/*.remostyle{
+    clear: both;
+    width: 223px;
+    height: 778px;
+    cursor: pointer;
+    position: absolute;
+    left: 1px;
+    top: 100px;
+    display: block;
+}*/
+.topNavRight li #iphonestyle img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+/*
+搜索部分*/
+.search{
+    width: 1200px;
+    height: 123px;
+    margin: 0 auto;
+}
+.logo{
+    height: 100%;
+    width: 230px;
+    float:left;
+}
+.logo img{
+    width: 221px;
+    height: 58px;
+    margin-top: 32px;
+}
+.searchCen{
+    width: 642px;
+    height: 100%;
+    float: left;
+    margin-left: 250px;
+}
+.searchCen input{
+    width: 540px;
+    height: 34px;
+    border: none;
+    border: 1px solid #E51A45;
+    margin-top: 30px;
+    float: left;
+}
+.searchCen button{
+    width: 96px;
+    height: 36px;
+    border: none;
+    background-color:#E51A45;
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    float: left;
+    margin-top: 30px;
+}
+.searchCen .classList{
+    width:  642px;
+    height: 36px;
+}
+.searchCen .classList li{
+    height: 36px;
+    line-height: 36px;
+    float: left;
+}
+.searchCen .classList li a{
+    padding-right:18px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #c0c0c0;
+}
+.searchCen .classList li a:hover{
+    color: red;
+}
+/*
+导航部分*/
+.nav{
+    height: 6px;
+    width: 100%;
+    background: #E51A45;
+}
+.navCon{
+    width: 1000px;
+    height: 680px;
+    margin: 18px auto;
+}
+.navConLeft{
+    width: 203px;
+    height: 100%;
+    float:left;
+}
+.navTopCenter{
+    width: 200px;
+    height: 224px;
+    border: 1px solid #c0c0c0;
+    border-top: none;
+    margin-top: -2px;
+}
+.navTopPic{
+    width: 100%;
+    height: 32px;
+}
+.navTopPic img{
+    width: 100%;
+    height: 32px;
+    margin-left: -1px;
+}
+.navTopCenter p{
+    height: 30px;
+    width: 140px;
+    padding: 0px 30px;
+   /* margin-left: 30px;*/
+    line-height: 30px;
+    background-color: #F8F8F8;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #c0c0c0;
+    border-top: 1px solid #c0c0c0;
+}
+.navTopCenter ul{
+    width: 100%;
+    height: 190px;
+}
+.navTopCenter ul li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.navTopCenter ul li span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #2F97B4;
+}
+.activeClss{
+    border-left: 2px solid #FA4E7A;
+}
+.navTopCenter ul li b{
+    font-weight: 100;
+    float: right;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #2F97B4;
+    visibility: hidden;
+}
+.navConRight{
+    width: 790px;
+    height: 100%;
+    float: right;
+  /*  border: 1px solid #c0c0c0;*/
+}
+.navConRightOne{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border: 1px solid #c0c0c0;
+}
+.navConRightOne a{
+    color:#2F97B4;
+    margin-left: 10px;
+
+}
+.navConRightTwo{
+    height: 30px;
+    width: 100%;
+    border-bottom: 2px solid #FA4E7A;
+    margin-top: 26px;
+}
+.navConRightTwo span{
+    display: inline-block;
+    height: 29px;
+    width: 104px;
+    background:#FCFCFC;
+    border: 1px solid #c0c0c0;
+    border-bottom: none;
+    border-radius:5px 5px 0px 0px;
+    text-align: center;
+    line-height: 29px;
+}
+.navConRightTwo .avtives{
+    background-color: #FA4E7A;
+     border: 1px solid #FA4E7A;
+    color: white;
+}
+.formTable{
+    width: 790px;
+    height: 588px;
+    border:1px solid #c0c0c0;
+}
+.formTable #myIframe{
+    width: 790px;
+    height: 584px;
+}

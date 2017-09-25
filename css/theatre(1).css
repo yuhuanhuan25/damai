@@ -1,0 +1,711 @@
+/*导航部分*/
+.top{
+    height: 36px;
+    width: 100%;
+    background-color: #F7F7F7;
+    border: 1px solid #c0c0c0;
+}
+.topNav{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.topNavLeft{
+    height: 100%;
+    width: 350px;
+    float: left;
+}
+.topNavLeft li,.topNavRight li{
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+}
+.topNavLeft li ol,.topNavRight li ol{
+    clear: both;
+    position: absolute;
+    top: 36px;
+    left: -1px;
+    width: 98px;
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
+    border-top: none;
+    display: none;
+}
+.topNavRight li ol{
+    display: block;
+    width: 82px;
+    text-align: center;
+    display: none;
+}
+.topNavLeft li ol li,.topNavRight li ol li{
+    clear: both;
+    height: 24px;
+    line-height: 24px;
+    width: 96px;
+    text-align: center;
+}
+.topNavRight li ol li{
+    width: 82px;
+    text-align: center;
+}
+
+.topNavLeft li a{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    padding:0px 16px;
+    border-left: 1px solid #c0c0c0;
+}
+
+.topNavLeft li span{
+    transition: all 1s;
+}
+
+.navActive{
+    background:#fff;
+    border:1px solid #c0c0c0;
+    border-bottom:none;
+    border-top:none;
+}
+
+.topNavLeft li a b{
+    font-weight: 100;
+}
+.topNavLeft li a b:hover{
+    text-decoration: underline;
+}
+.topNavLeft li a b:nth-child(1){
+    color: red;
+}
+.topNavLeft li:nth-child(1) a{
+    padding-left: 0px;
+    border-left:none;
+}
+.topNavLeft li a span{
+    width: 11px;
+    height: 7px;
+    display: inline-block;
+    background: url("../img/img1/icon1.png") no-repeat -18px -47px;
+    margin-left: 5px;
+}
+.hoverSpan{
+    transform: rotate(360deg);
+   /* background-position: 0px -129px;*/
+}
+.topNavRight{
+    width: 404px;
+    height: 100%;
+    float: right;
+}
+.topNavRight li{
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    text-decoration: none;
+    color: black;
+}
+.topNavRight li a{
+    font-size: 12px;
+    padding:0px 16px;
+    color: black;
+    border-left: 1px solid #c0c0c0;
+
+}
+.topNavRight li:nth-child(1) a{
+    border-left:none;
+}
+/*
+搜索部分*/
+.search{
+    width: 1200px;
+    height: 123px;
+    margin: 0 auto;
+}
+.logo{
+    height: 100%;
+    width: 230px;
+    float:left;
+}
+.logo img{
+    width: 221px;
+    height: 58px;
+    margin-top: 32px;
+}
+.searchCen{
+    width: 642px;
+    height: 100%;
+    float: left;
+    margin-left: 250px;
+}
+.searchCen input{
+    width: 540px;
+    height: 34px;
+    border: none;
+    border: 1px solid grey;
+    margin-top: 30px;
+    float: left;
+}
+.searchCen button{
+    width: 96px;
+    height: 36px;
+    border: none;
+    background-color:grey;
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    float: left;
+    margin-top: 30px;
+}
+.searchCen .classList{
+    width:  642px;
+    height: 36px;
+}
+.searchCen .classList li{
+    height: 36px;
+    line-height: 36px;
+    float: left;
+}
+.searchCen .classList li a{
+    padding-right:18px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #c0c0c0;
+}
+.searchCen .classList li a:hover{
+    color: red;
+}
+/*
+导航部分*/
+.nav{
+    height: 56px;
+    width: 100%;
+    background: grey;
+}
+.navCon{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+
+}
+.navCon ul{
+    width: 800px;
+    height: 100%;
+    float: left;
+}
+.navCon ul li{
+    height: 100%;
+    line-height: 56px;
+    float: left;
+    padding: 0px 30px;
+}
+.navCon ul li:hover{
+    background-color: #FF7B19;
+}
+.navCon ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+
+   /* display: block;*/
+}
+.navConRight{
+    height: 56px;
+    line-height: 56px;
+    float: right;
+    margin-right: 30px;
+    font-size: 16px;
+    color: white;
+}
+/*轮播图*/
+.swiper-container {
+    width: 100%;
+    height:420px;
+    position: relative;
+}
+.lunboLine{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255,255,255,0.2);
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    z-index: 99;
+}
+.youLike{
+    width: 1200px;
+    height: 420px;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+.youLikeLogo{
+    height: 92px;
+    width: 100%;
+    position: relative;
+}
+.youLikeLogo img{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+
+}
+.youLikeLogo p{
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    z-index:-1;
+}
+.youLikeCon{
+    width: 100%;
+    height: 284px;
+}
+.youLikeCon dl{
+    width: 154px;
+    height: 280px;
+    float: left;
+    margin-left: 55px;
+}
+.youLikeCon dl:nth-child(1){
+    margin-left: 0px;
+}
+.youLikeCon dl dt{
+    overflow: hidden;
+}
+.youLikeCon dl dt,.youLikeCon dl dt img{
+    width: 154px;
+    height: 207px;
+}
+.youLikeCon dl dt{
+    position: relative;
+}
+.youLikeCon dl dt p{
+    width: 154px;
+    height: 207px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 207px;
+    left: 0px;
+    color: white;
+    font-size: 14px;
+}
+.youLikeCon dl dt p span{
+    display: block;
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+    line-height: 30px;
+    margin-left: 27px;
+    margin-top: 88px;
+
+}
+.youLikeCon dl dd{
+    width: 100%;
+    color: grey;
+    margin-top: 20px;
+}
+.youLikeCon dl dd P{
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: black;
+
+}
+.youLikeCon dl dd P:hover{
+    color: red;
+}
+.youLikeCon dl dd span{
+    font-size: 14px;
+    color: black;
+}
+/*背景内容*/
+.bg{
+    width: 100%;
+    height: 1950px;
+    background: #F7F7F7;
+}
+.bgConAll{
+    height: 430px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.bgConLeft{
+    width: 920px;
+    height: 430px;
+    float: left;
+}
+.bgConLeftP{
+    height: 80px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 80px;
+}
+.bgConLeftCon,.bgConRightCon{
+    width: 100%;
+    height: 348px;
+    border: 1px solid #c0c0c0;
+    background-color: #fff;
+    float: left;
+}
+.bgConLeftConOne{
+    width: 260px;
+    height: 300px;
+    margin: 23px;
+    float: left;
+    
+}
+.bgConLeftConOneImg{
+    width: 100%;
+    height: 124px;
+    position: relative;
+}
+.bgConLeftConOneImg img{
+    width: 100%;
+    height: 124px;
+}
+
+.bgConLeftConOneImg .slidePer{
+    width: 100%;
+    height: 124px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+}
+
+.bgConLeftConOneName{
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    border-bottom: 1px dashed #c0c0c0;
+
+}
+.bgConLeftConOneName p{
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+.bgConLeftConOneName span{
+    float: right;
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    margin-top: 16px;
+    background: #FF7B19;
+    color: white;
+
+}
+.bgConLeftConOneFooter{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+}
+.bgConLeftConOneFooter b{
+    width: 33px;
+    height: 33px;
+    display: block;
+    float: left;
+}
+.bgConLeftConOneFooter b img{
+    width: 33px;
+    height: 33px;
+}
+.bgConLeftConOneFooter span{
+    display: block;
+    float: left;
+    height: 33px;
+    line-height: 33px;
+    width: 100px;
+    margin-left: 10px;
+}
+.bgConLeftConOneFooter p{
+    line-height: 20px;
+}
+.bgConRight{
+    width: 260px;
+    height: 430px;
+    float: right;
+}
+.bgConRightConOne{
+    width: 230px;
+    height: 400px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.bgConRightConOne img{
+    width: 230px;
+    height: 318px;
+}
+.tabsAll{
+    width: 1200px;
+    height: 670px;
+    margin: 0 auto;
+}
+.tabsLeftALl{
+    width: 920px;
+    height: 670px;
+    float: left;
+}
+
+.tabsLeft{
+    width: 920px;
+    height: 590px;
+    border:1px solid #c0c0c0;
+    border-top: none;
+    background-color: #fff;
+}
+.tabsLeftNav{
+    height: 45px;
+    width: 100%;
+}
+.tabsLeftNav li{
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding:0px 40px;
+    font-size: 14px;
+    border-right: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+    border-top: 1px solid #c0c0c0;
+}
+.tabsLeftNav li:last-child{
+    width: 141px;
+    border-right: none;
+}
+.tabsLeftNav .hoverTitle{
+    border-top: 2px solid orangered;
+    border-bottom:none;
+}
+.tabsLeftCon{
+    height: 543px;
+    width: 100%;
+    overflow: hidden;
+}
+.tabsLeftConOne,.tabsLeftConOne img{
+    height: 543px;
+    width: 100%;
+}
+.tabsRightAll{
+    width: 260px;
+    height: 670px;
+    float: right;
+}
+.tabsRight{
+    width: 100%;
+    height:590px;
+    border: 1px solid #c0c0c0;
+}
+.tabsRightNav{
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+}
+.tabsRightNav li{
+    width: 129px;
+    height: 45px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    line-height: 45px;
+    border-bottom: 1px solid #c0c0c0;
+}
+.tabsRightNav li:nth-child(1){
+    border-right: 1px solid #c0c0c0;
+}
+.tabsRightCon{
+    width: 100%;
+    height: 544px;
+    overflow: hidden;
+}
+.tabsRightConOne{
+    width: 100%;
+    height: 544px;
+}
+.tabsRightConOne img{
+    width: 100%;
+    height: 100%;
+}
+.tabsRightNav .tabsRightNavHover{
+    border-bottom: none;
+    background-color: #fff;
+}
+.content{
+    height: 1600px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 48px;
+    overflow: hidden;
+}
+.contentCen{
+    width: 1200px;
+    height: 100%;
+   margin: 0 auto;
+    margin-top:80px;
+}
+.contentCen .youLikeLogo img,.footerCon .youLikeLogo img{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    margin-left: -94px;
+
+}
+.contentCen .youLikeLogo p,.footerCon .youLikeLogo p{
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    z-index: 0;
+}
+.name{
+    width: 100%;
+    height: 300px;
+}
+.name li{
+    float: left;
+    margin-right: 17px;
+    border: 1px solid #c0c0c0;
+
+}
+.name li:nth-child(1):hover{
+    border: 1px solid orangered;
+}
+.name li:nth-child(2):hover{
+    border: 1px solid orangered;
+}
+.name li:nth-child(3):hover{
+    border: 1px solid orangered;
+}
+.name li:nth-child(4):hover{
+    border: 1px solid orangered;
+}
+.name li:last-child{
+    margin-right:0px;
+}
+.contentDate{
+    width: 100%;
+    height: 128px;
+    margin-top: 60px;
+}
+.contentDate img{
+    width: 1201px;
+  /*  margin-left: -1px;*/
+}
+.contentDateAll{
+    height: 854px;
+    width: 1197px;
+    border: 1px solid #c0c0c0;
+    border-top: none;
+}
+.contentDateAll ul{
+    width: 100%;
+    height: 100%;
+}
+.contentDateAll ul li{
+    width: 170px;
+    height: 170px;
+    float: left;
+    border: 1px solid #c0c0c0;
+    border-left: none;
+    border-bottom: none;
+    position: relative;
+    overflow: hidden;
+}
+.contentDateAll ul li div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top:170px;
+    left: 0px;
+}
+.contentDateAll ul li:nth-child(7),.contentDateAll ul li:nth-child(14),.contentDateAll ul li:nth-child(21),.contentDateAll ul li:nth-child(28),.contentDateAll ul li:nth-child(35){
+    border-right: none;
+}
+.contentDateAll ul li:nth-child(1),.contentDateAll ul li:nth-child(2),.contentDateAll ul li:nth-child(3),.contentDateAll ul li:nth-child(4),.contentDateAll ul li:nth-child(5),.contentDateAll ul li:nth-child(6),.contentDateAll ul li:nth-child(7){
+    border-top: none;
+}
+.contentDateAll ul li img{
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.contentDateAll ul li span{
+    color: grey;
+    display: block;
+    margin-left: 35px;
+    margin-top: 40px;
+    line-height: 30px;
+}
+.contentDateAll ul li p{
+    margin-left: 30px;
+    line-height: 20px;
+
+}
+
+.footer{
+    width: 100%;
+    height: 800px;
+    background-color: #fff;
+}
+.footerCon{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.footerPic{
+    width: 100%;
+    height: 743px;
+}
+.di{
+    height: 155px;
+}
+.di .links{
+    text-align: center!important;
+    margin: 15px 0;
+}
+.di .links span{
+    display: inline-block;
+    margin: 0 10px;
+    color: #ccc;
+}
+.di .links a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.di .buttom{
+    text-align: center;
+    margin-top: 10px;
+}
+.di .buttom span{
+    display: inline-block;
+    margin: 0 20px;
+    color: #cccccc;
+}
+.di .buttom a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.di .di_tu{
+    text-align: center;
+}
+.di .di_tu img{
+    margin: 10px 28px;
+    cursor: pointer;
+}

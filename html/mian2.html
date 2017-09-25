@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .boxAll{
+            width: 790px;
+        }
+
+        .box{
+            width: 460px;
+            height: 350px;
+            border: 1px solid black;
+            background: rgba(0,0,0,0.5);
+            margin:20px;
+            position: relative;
+            float: left;
+        }
+        .boxCon{
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 155px;
+            top: 125px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .boxCon .file{
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+
+        }
+        .boxCon img{
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+        .boxRight{
+            width: 157px;
+            height: 358px;
+            margin-left: 60px;
+            float: left;
+        }
+        .boxRight .one{
+            width: 170px;
+            height: 40px;
+            line-height: 40px;
+            margin-top: 20px;
+
+        }
+        .boxRight .two{
+            width: 150px;
+            height: 150px;
+            border: 1px solid #c0c0c0;
+            border-radius: 5px;
+            box-shadow: 0px 0px 3px 1px #c0c0c0;
+        }
+        .boxRight .three{
+            width: 140px;
+            height: 40px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="boxAll">
+    <div class="box" id="box">
+        <div class="boxCon" id="boxCon">
+            <input type="file" class="file" id="file"/>
+            <img src="../img/QQ截图20170924175647.png" alt=""/>
+        </div>
+    </div>
+    <div class="boxRight">
+        <div class="one">头像预览（150*150）</div>
+        <div class="two" id="two"></div>
+        <div class="three" id="three"><img src="../img/QQ截图20170924183857.png" alt=""/></div>
+
+
+
+    </div>
+</div>
+<script src="../js/jquery-1.12.2.js"></script>
+<script src="../js/html2canvas.min.js"></script>
+<script>
+var file=document.getElementById('file');
+var boxCon=document.getElementById('boxCon');
+var box=document.getElementById('box');
+var two=document.getElementById('two');
+console.log(file);
+console.log(box);
+var rd = new FileReader();
+file.onchange = function () {
+    var files = file.files[0];
+    rd.readAsDataURL(files);     //这只是告诉浏览器，要去读文件,此处是将文件读取成base64的编码格式字符串
+    rd.onload = function(){
+//            console.log(this);
+        var imgObj = new Image();
+        imgObj.src = this.result;
+        imgObj.width = 460;
+        imgObj.height = 350;
+        box.style.backgroundColor='';
+        boxCon.style.display='none';
+
+        box.appendChild(imgObj);
+        var previewPic = imgObj.cloneNode(true);
+        previewPic.style.width='150px';
+        previewPic.style.height='150px';
+
+        $(".boxRight").find(".two").append(previewPic);
+    }
+
+}
+$(function () {
+    $("#three").click(function(){
+        html2canvas($('#two'),{
+            onrendered: function (canvas) {
+                var url = canvas.toDataURL();
+                //以下代码为下载此图片功能
+                var triggerDownload = $("<a>").attr("href", url).attr("download", "myPic.jpg").appendTo("body");
+                triggerDownload[0].click();
+                triggerDownload.remove();
+            }
+        })
+    });
+});
+
+</script>
+
+</body>
+</html>

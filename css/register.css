@@ -1,0 +1,415 @@
+.roof{
+    background: #fff;
+    height: 88px;
+    width: 100%;
+}
+.roof .roof_x{
+   position: relative;
+    top: 20px;
+}
+.roof .roof_l{
+    width: 400px;
+    height: 47px;
+    float: left;
+}
+.roof .roof_l img{
+    width: 126px;
+    height: 47px;
+}
+.roof .roof_l span{
+    width: 1px;
+    height: 47px;
+    display: inline-block;
+    background: rgba(0,0,0,0.2);
+    margin:0 20px;
+}
+.roof .roof_l a{
+    display: inline-block;
+    font-size: 24px;
+    position: relative;
+    top: -15px;
+}
+.roof .roof_r{
+    float: right;
+    margin-top: 2px;
+}
+.roof .roof_r a{
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.roof .roof_r a:hover{
+    color: red;
+    text-decoration: underline;
+    border: 1px solid blue;
+}
+.con{
+    height: 580px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.con .con_x{
+    position: relative;
+}
+.con .account_con{
+    width: 440px;
+    height: 400px;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+.con .account_con .con_xuan{
+    width: 440px;
+    height: 40px;
+}
+.con .account_con .con_xuan a{
+    color: #000;
+    width: 146px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    background: rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.xuan_ding{
+    background: #fff!important;
+}
+.con .account_con .con_xuan a:hover{
+    color: red;
+}
+.con .account_con .con_xuan>a+a{
+    border-left: 1px solid rgba(0,0,0,0.2);
+}
+.con .account_con .con_xuan a:nth-child(1) span{
+    background: url(//sdui.damai.cn/damai_v2/login_register3.0/images/new-pop/m_login_pic.png) no-repeat 0 0;
+    width: 13px;
+    height: 15px;
+    float: left;
+    margin: 12px -20px 0 35px;
+    padding-right: 10px;
+}
+.con .account_con .con_xuan a:nth-child(2) span{
+    background: url(//sdui.damai.cn/damai_v2/login_register3.0/images/new-pop/m_ewm.png) no-repeat 0 0;
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin: 14px -15px 0 30px;
+    padding-right: 10px;
+}
+.con .account_con .con_xuan a:nth-child(3) span{
+    background: url(//sdui.damai.cn/damai_v2/login_register3.0/images/new-pop/m_message_pic.png) no-repeat 0 0;
+    width: 11px;
+    height: 16px;
+    float: left;
+    margin: 12px -15px 0 20px;
+    padding-right: 10px;
+}
+.con .account_con .selected{
+    margin-top: 40px;
+}
+/*.con .account_con .selected>div{
+    display: none;
+}*/
+.con .account_con .selected .selected_1 div{
+    height: 45px;
+    margin: 30px;
+}
+.con .account_con .selected .selected_1 .a{
+    display: block;
+    width: 380px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-family: Microsoft YaHei;
+    background-color: #f2546b;
+    border: none;
+    margin-left: 30px;
+}
+.con .account_con .selected .selected_1 div:nth-child(1),.con .account_con .selected .selected_1 div:nth-child(2){
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.con .account_con .selected .selected_1 div:nth-child(1) span,.con .account_con .selected .selected_1 div:nth-child(2) span{
+    display: block;
+    *display: inline-block;
+    width: 45px;
+    height: 27px;
+    border-right: 1px solid #e3e3e3;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.con .account_con .selected .selected_1 div:nth-child(1) span{
+    background: url(//sdui.damai.cn/damai_v2/login_register3.0/images/icon_bg.png) no-repeat 10px 0;
+}
+.con .account_con .selected .selected_1 div:nth-child(1) input,.con .account_con .selected .selected_1 div:nth-child(2) input{
+    display: block;
+    *display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    font-size: 14px;
+    border: none;
+    *border: 0;
+    padding: 0 10px;
+    color: #c3c3c3;
+    outline: none;
+    float: left;
+    *float: none;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.con .account_con .selected .selected_1 .p1{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.con .account_con .selected .selected_1 .p1{
+
+}
+.con .account_con .selected .selected_1 .p1 .p_r{
+    float: right;
+}
+.con .account_con .selected .selected_1 .p1 .p_r a:nth-child(2){
+    margin-right: 30px;
+    color: red;
+    margin-left: 10px;
+}
+.con .account_con .selected .selected_1 .p2{
+    width: 86%;
+    height: 32px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-left: 30px;
+    clear: both;
+}
+.con .account_con .selected .selected_1 .p2 span{
+    float: left;
+    position: relative;
+}
+.con .account_con .selected .selected_1 .p2 a{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    float: left;
+}
+.con .account_con .selected .selected_1 .p2 .wx{
+    background: url(//sdui.damai.cn/damai_v2/login_register3.0/images/share_bg.png) no-repeat;
+}
+.con .account_con .selected .selected_1 .p2 .qq{
+    background: url(//sdui.damai.cn/damai_v2/login_register3.0/images/share_bg.png) no-repeat 0 -25px;
+}
+.con .account_con .selected .selected_1 .p2 .sina{
+    background: url(//sdui.damai.cn/damai_v2/login_register3.0/images/share_bg.png) no-repeat 0 -50px;
+}
+.con .account_con .selected .selected_1 .p2 .zhifubao{
+    background: url(//sdui.damai.cn/damai_v2/login_register3.0/images/share_bg.png) no-repeat 0 -75px;
+}
+.con .account_con .selected .selected_2{
+    
+}
+.con .account_con .selected .selected_2 span{
+    margin-left: 30px;
+    font-size:20px;
+}
+.con .account_con .selected .selected_2 .tips{
+    margin-left: 30px;
+    margin-top: 20px;
+    text-align: center
+}
+.con .account_con .selected .selected_2 .tips a{
+    margin: 0 5px;
+    color: lightgreen;;
+}
+.con .account_con .selected .selected_2 p{
+   text-align: center;
+}
+.con .account_con .selected .selected_2 p a{
+    display: inline-block;
+    line-height: 22px;
+    font-size: 14px;
+    padding-left: 18px;
+    background: url(//sdui.damai.cn/damai_v2/login_register3.0/images/icon_bg.png) no-repeat 0 -276px;
+    background-position-x: 0px;
+    background-position-y: -276px;
+}
+.con .account_con .selected .selected_2 .erweima{
+    display: block;
+    width: 165px;
+    height: 165px;
+    overflow: hidden;
+    border: 1px solid #dbdbdb;
+    padding: 4px;
+    margin: 15px auto;
+    margin-left: 140px;
+}
+.con .account_con .selected .selected_3{
+
+}
+.selected .overaaa{
+    height: 313px;
+    width: 100%;
+    overflow: hidden;
+}
+.con .account_con .selected .selected_3 p{
+    margin-left: 30px;
+}
+.con .account_con .selected .selected_3 .div1{
+    width: 380px;
+    height: 45px;
+    line-height: 45px;
+    margin: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.con .account_con .selected .selected_3 .div1 span{
+    display: block;
+    *display: inline-block;
+    width: 45px;
+    height: 27px;
+    border-right: 1px solid #e3e3e3;
+    background: url(//sdui.damai.cn/damai_v2/login_register3.0/images/icon_bg.png) no-repeat 10px 0;
+    float: left;
+    margin-top: 10px;
+}
+.con .account_con .selected .selected_3 h3{
+   margin-top: 5px;
+}
+.con .account_con .selected .selected_3 h3 .m_china{
+    width: 30px;
+    height: 20px;
+    background: url(//sdui.damai.cn/damai_v2/login_register3.0/images/jack_pic.png) no-repeat 0 0;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 7px;
+    border: 1px solid #e3e3e3;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.con .account_con .selected .selected_3 h3 .fr{
+    float: left;
+    margin-top: -4px;
+    margin-left: 20px;
+}
+.con .account_con .selected .selected_3 .div1 input{
+    display: block;
+    *display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    font-size: 14px;
+    border: none;
+    *border: 0;
+    padding: 5px 10px;
+    color: #c3c3c3;
+    outline: none;
+    float: left;
+    *float: none;
+    overflow: hidden;
+}
+.con .account_con .selected .selected_3 .div2{
+    width: 380px;
+    height: 45px;
+    line-height: 45px;
+    margin: 30px;
+}
+.con .account_con .selected .selected_3 .div2 div:nth-child(1){
+    width: 245px;
+    height: 45px;
+    border: 1px solid rgba(0,0,0,0.2);
+    float: left;
+}
+.con .account_con .selected .selected_3 .div2 div:nth-child(1) .account_password{
+    display: block;
+    *display: inline-block;
+    width: 45px;
+    height: 27px;
+    border-right: 1px solid #e3e3e3;
+    background: url(//sdui.damai.cn/damai_v2/login_register3.0/images/icon_bg.png) no-repeat 10px 0;
+    float: left;
+    *float: none;
+    margin-top: 10px;
+}
+.con .account_con .selected .selected_3 .div2 div:nth-child(1) input{
+    display: block;
+    *display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    font-size: 14px;
+    border: none;
+    *border: 0;
+    padding: 0 10px;
+    margin-top: 10px;
+    color: #c3c3c3;
+    outline: none;
+    float: left;
+    *float: none;
+    overflow: hidden;
+}
+.con .account_con .selected .selected_3 .div2 div:nth-child(2) span{
+    width: 124px;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    background: #f0f0f0;
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    color: #000;
+}
+.con .account_con .selected .selected_3 .a{
+    display: block;
+    width: 380px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f2546b;
+    border: none;
+    margin-left: 30px;
+}
+
+.di{
+    height: 155px;
+}
+.di .links{
+    text-align: center!important;
+    margin: 15px 0;
+}
+.di .links span{
+    display: inline-block;
+    margin: 0 10px;
+    color: #ccc;
+}
+.di .links a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.di .buttom{
+    text-align: center;
+    margin-top: 10px;
+}
+.di .buttom span{
+    display: inline-block;
+    margin: 0 20px;
+    color: #cccccc;
+}
+.di .buttom a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.di .di_tu{
+    text-align: center;
+}
+.di .di_tu img{
+    margin: 10px 28px;
+    cursor: pointer;
+}

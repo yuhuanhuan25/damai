@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/register.css"/>
+    <script src="../js/jquery-1.12.2.js"></script>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 14px;
+        }
+        em,s,em,i,a{
+            font-style: normal;
+            color: #000;
+            text-decoration: none;
+        }
+        .w{
+            width: 1200px;
+            height: 0;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="roof">
+    <div class="roof_x w">
+        <div class="roof_l">
+            <img src="../img/logo.png" alt=""/>
+            <span></span>
+            <a href="javascript:;">欢迎登录</a>
+        </div>
+        <div class="roof_r">
+            <a href="javascript:;">English</a>
+        </div>
+    </div>
+</div>
+<div class="con">
+    <div class="con_x w">
+      <div class="account_con">
+          <div class="con_xuan">
+              <a href="javascript:;" class="xuan_ding"><span></span>账户登录</a>
+              <a href="javascript:;"><span></span>二维码登录</a>
+              <a href="javascript:;"><span></span>短信快捷登录</a>
+          </div>
+          <div class="selected">
+              <div class="overaaa">
+                  <div class="selected_1 code kai">
+                      <div id="youxiangfu"><span></span><input type="text" placeholder="手机号码" id="youxiang"/></div>
+                      <div id="denglufu"><input type="password" placeholder="登录密码" id="denglu"/></div>
+                      <a href="#" class="a" id="ljdl">立即登录</a>
+                      <p class="p1"><label class="checkbox"><input type="checkbox"><span>下次自动登录</span>
+                      </label><span class="p_r"><a href="javascript:;">忘记密码?</a><a href="../html/login.html">立即注册</a></span></p>
+                      <p class="p2">
+                          <span>其他登录：</span>
+                          <a class="wx" href="http://connect.damai.cn/wechat/login.aspx?callbackUrl=http%3a%2f%2forder.damai.cn%2findex.aspx%3fspm%3da2o6e.home_bj.0.0.781015dc0PO8GJ" onclick="cnzz(this);" title="微信"></a>
+
+                          <a href="http://connect.damai.cn/qzone/login.aspx?callbackUrl=http%3a%2f%2forder.damai.cn%2findex.aspx%3fspm%3da2o6e.home_bj.0.0.781015dc0PO8GJ" class="qq" onclick="cnzz(this);" title="QQ"></a>
+
+                          <a href="http://connect.damai.cn/Sina/Login.aspx?callbackUrl=http%3a%2f%2forder.damai.cn%2findex.aspx%3fspm%3da2o6e.home_bj.0.0.781015dc0PO8GJ" class="sina" onclick="cnzz(this);" title="新浪微博"></a>
+                          <a href="http://connect.damai.cn/alipay/Login.aspx?callbackUrl=http%3a%2f%2forder.damai.cn%2findex.aspx%3fspm%3da2o6e.home_bj.0.0.781015dc0PO8GJ" class="zhifubao" onclick="cnzz(this);" title="支付宝"></a>
+                      </p>
+                  </div>
+                  <div class="selected_2 code">
+                      <span>扫码登录</span>
+                      <div class="tips">
+                          用
+                          <a href="javascript:;">大麦手机客户端</a>扫码快速登录
+                      </div>
+                      <div class="erweima">
+                          <img id="QRCodeImg" src="../img/llo.jpg" alt="" width="165" height="165">
+                      </div>
+                      <p><a href="javascript:void(0)" onclick="RefreshQRCode()">刷新一下</a></p>
+                  </div>
+                  <div class="selected_3 code">
+                      <p>验证即登录，未注册将自动创建大麦网账号</p>
+                      <div class="div1"><span class="account_email"></span>
+                          <h3>
+                              <i class="m_china"></i>
+                              <b class="fl" style="display:none;">中国</b>
+                              <b class="fr" style="display: block;">+86</b>
+                          </h3>
+                          <input type="text" placeholder="请输入手机号"/>
+                      </div>
+                      <div class="div2">
+                          <div>
+                              <span class="account_password"></span><input type="text" placeholder="动态密码"/>
+                          </div>
+                          <div>
+                              <span id="get_mcode">发送动态密码</span>
+                          </div>
+                      </div>
+                      <a href="../html/index.html" class="a">立即登录</a>
+                  </div>
+              </div>
+          </div>
+
+
+      </div>
+    </div>
+</div>
+<div class="di">
+    <div class="links"><a href="javascript:;">公司介绍</a>
+        <span>|</span>
+        <a href="javascript:;">品牌识别</a>
+        <span>|</span>
+        <a href="javascript:;">企业荣誉</a>
+        <span>|</span>
+        <a href="javascript:;">隐私声明</a>
+        <span>|</span>
+        <a href="javascript:;">联系及合作</a>
+        <span>|</span>
+        <a href="javascript:;">招聘信息</a>
+        <span>|</span>
+        <a href="javascript:;">网站地图</a>
+        <span>|</span>
+        <a href="javascript:;">友情链接</a>
+        <span>|</span>
+        <a href="javascript:;">公司大事记</a>
+    </div>
+    <div class="w" style="height: 1px; background: rgba(0,0,0,0.2)"></div>
+
+    <div class="buttom">
+        <a href="javascript:;">京ICP证031057号</a>
+        <span>|</span>
+        <a href="javascript:;">京ICP备11043884号</a>
+        <span>|</span>
+        <img src="../img/wu.png" alt="" style="position: relative;top: 5px;"/>
+        <a href="javascript:;">京公网安备11010102000430号</a>
+        <span>|</span>
+        <a href="javascript:;">广播电视节目制作经营许可证</a>
+        <span>|</span>
+        <a href="javascript:;">(京)字第02253号</a>
+    </div>
+
+    <div class="buttom">
+        <a href="javascript:;">网络文化经营许可证京网文[2016]3438-413号</a>
+        <span>|</span>
+        <a href="javascript:;">营业性演出许可证 京市演587号</a>
+    </div>
+    <div class="buttom">
+        北京红马传媒文化发展有限公司 版权所
+        <span><a href="javascript:;">大麦网</a></span>
+        有  Copyright 2003-2017 All Rights Reserved
+    </div>
+</div>
+<script src="../js/register.js"></script>
+
+</body>
+</html>
